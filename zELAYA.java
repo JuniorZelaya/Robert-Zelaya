@@ -3,10 +3,13 @@ public class zELAYA {
 //Este ejercicio lo copie de Fredy Puerto https://github.com/fredypuerto/Quiz/blob/master/src/Quiz.java
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		//creamos un scanner para las respuestas
 		Scanner s = new Scanner(System.in);
-
+                //hacemos las preguntas
 		System.out.println("Cuestionario");
 		System.out.println("¿Cuanto años estuvo Honduras sin ir a un mundial?");
+		//creamos una variable para cada una de las resspuestas
+		//hacemos un ciclo que nos indique si la respuesta es correcta o incorrecta
 
 		int x = s.nextInt();
 		if (x==28)
@@ -17,6 +20,7 @@ public class zELAYA {
 
 		System.out.println("¿A cuantos mundiales a ido Honduras?");
 		int f = s.nextInt();
+		
 		if (f==3)
 			System.out.println("Correcto");
 		else
@@ -45,7 +49,8 @@ public class zELAYA {
 			System.out.println("Correcto");
 		else
 			System.out.println("Incorrecto");
-
+                //creamos las variables p1, p2, p3, p4 y p5 para hacer el porcentaje
+		//con un valor de 20 cada pregunta para completar el 100% si estan buenas las 5 
 
 		int p1;
 		if (x==28)
@@ -76,7 +81,8 @@ public class zELAYA {
 			p5=20;
 		else
 			p5=0;
-
+                //con un S.O.P sumamos las respuestas correctas y incorrectas 
+		//y tenemos listo el programa
 		System.out.println("Su porcentaje de respuestas es: ");
 		System.out.println(p1+p2+p3+p4+p5+("%"));
 
